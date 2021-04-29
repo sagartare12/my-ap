@@ -9,12 +9,16 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^7.24.0",
+    "node-sass": "^5.0.0",
+    "parcel-bundler": "^1.12.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "babel-preset-nano-react-app": "^0.1.0",
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-beta.2"
   },
   "babel": {
     "presets": [
