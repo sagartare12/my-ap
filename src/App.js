@@ -53,10 +53,12 @@ const onNewGame = () => {
  
   return (
   <div className="app">
-    <h1>Tic Tac Toe game</h1>
+    <h1>Tic <span className="text-green"> Tac </span> Toe game</h1>
     <StatusMessage winner={winner} current={current} />
    <Board board={current.board} handlerSquareClick={handlerSquareClick} winningSquares={winningSquares}/>
-   <button type="button" onClick={onNewGame}>Restart the Game</button>
+   <button type="button" onClick={onNewGame}
+   className={`btn-reset ${winner ? 'active': ''}`}>Restart the Game</button>
+   <div className="bg-balls" />
    <History history={history} moveTo={moveTo} currentMove={currentMove} />
   </div>
   );
